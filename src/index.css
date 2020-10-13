@@ -1,3 +1,39 @@
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+:root {
+  /* PRIMARY COLORS */
+  --myGrey: #121212;
+  --secondary: #303030;
+  --myOrange: #ffb300;
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.major {
+  font-weight: bold;
+  color: var(--myOrange);
+}
+
+.simple-link {
+  color: white;
+}
+
+.simple-link:hover {
+  text-decoration: underline;
+  color: var(--myOrange);
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +41,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--myGrey) !important;
+  color: white !important;
 }
 
 code {
