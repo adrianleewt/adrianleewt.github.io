@@ -12,7 +12,7 @@ const MainBlock = styled.div`
 const IntroBlock = styled.div``;
 
 const ProfPic = styled.img`
-  height: auto;
+  height: 400px;
   width: auto;
   border-radius: 4%;
   padding: 0;
@@ -35,18 +35,29 @@ const Sub = styled.a`
 const Nav = styled.div`
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+  padding-right: 10px;
 `;
 
 function Landing() {
   return (
     <MainBlock>
       <IntroBlock className='row'>
-        <ProfPic src='/images/me.jpg' className='col'></ProfPic>
+        <div
+          className='col-sm-auto justify-content-center'
+          style={{ display: 'flex' }}
+        >
+          <ProfPic src='/images/me.jpg'></ProfPic>
+        </div>
         <Nav className='col'>
-          <Lead className='major'>Adrian Lee</Lead>
+          <Lead className='major'>Hi! I'm Adrian</Lead>
           <SubLead className='secondary bold'>
             Head of Product, rapStudy
           </SubLead>
+          <SubLead className='bold'>
+            I love making things and growing them.
+          </SubLead>
+          <br />
           <Sub className='simple-link'>rapStudy</Sub>
           <Sub className='simple-link'>Bowtie</Sub>
           <Sub className='simple-link'>Cornell Hedge Fund</Sub>
