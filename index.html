@@ -10,6 +10,16 @@
     <meta name="author" content="Adrian Lee" />
 
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
 
   <body>
@@ -18,8 +28,18 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="matter.js" type="text/javascript"></script>
+
     <div class="page-wrapper">
       <div id="portaCubo">
+        <div id="navbar">
+          <button class="navbutton" id="nav-work">work</button>
+          <button class="navbutton" id="nav-photos">photos</button>
+        </div>
         <div id="cubo">
           <div class="face" id="face1"></div>
           <div class="face" id="face2"></div>
@@ -31,15 +51,107 @@
       </div>
       <div class="main-wrapper">
         <div class="content-wrapper">
-          <h1>my green box:</h1>
-          <h2>my stuff + things i like</h2>
-          <h3>adrian lee</h3>
+          <div id="main-header">
+            <h1 style="margin-bottom: 20px">my green box</h1>
+            <p class="noMargin">
+              i've spent the pandemic in my small room with green walls that i
+              chose when i was a kid.
+            </p>
+            <p class="noMargin">
+              thought i'd make a little website with the stuff i've done + the
+              stuff i like.
+            </p>
+            <h3 style="margin-top: 10px; margin-bottom: 0px">adrian lee</h3>
+            <a href="mailto: adrian@rapstudy.com">adrian@rapstudy.com</a>
+          </div>
 
-          <p>Nothing here yet :(</p>
+          <h1 id="header-work">work</h1>
+
+          <h3>rapStudy (2019 - now)</h3>
+          <p>
+            I'm head of product at rapStudy. We're an Edtech company that
+            integrates educational content into kids' favorite songs. Check us
+            out
+            <a href="https://rapstudy.com" target="_blank">here</a>.
+          </p>
+
+          <p style="color: red">VIDEO HERE</p>
+          <p>
+            I joined the team in late 2019, and we've gone from an idea and a
+            demo .mp3 to a full web app with users from over 30 schools in NY,
+            CT, and NJ, built with React.js and Firebase.
+          </p>
+          <p>
+            The key problem we're trying to solve is student engagement. Studies
+            have repeatedly shown that lower engagement results in lower
+            achievement (and this is especially true at younger ages).
+          </p>
+          <p>
+            By using music that kids already know and love, we provide a way for
+            kids to get excited about learning by singing and dancing - whether
+            its over Zoom or back at school.
+          </p>
+          <br />
+
+          <h3>Bowtie (2019)</h3>
+          <p>
+            In the summer of 2019, I interned at
+            <a href="https://www.bowtie.com.hk/en" target="_blank">Bowtie</a>,
+            an Insurtech startup based in Hong Kong. There, I worked on
+            identifying new customer segments, and wrote tailored Python tools
+            with <a href="https://www.nltk.org/" target="_blank">NLTK</a> to
+            identify hard-to-read areas in their insurance policies.
+          </p>
+          <p>
+            The core issue was readability - as a company that markets policies
+            directly to the end user, customers only understand Bowtie's unique
+            value if they can understand their policies.
+          </p>
+          <p>
+            With these tools, I was able to identify the specific topics and
+            segments in the policies that were too dense, long, or burdened with
+            legalese.
+          </p>
+
+          <br />
+
+          <h1 id="header-photos">photos</h1>
+          <p style="color: red">PUT THE PHYSICS SHIT HERE</p>
+          <p>
+            some images ive made, for a more complete look, check out the
+            instagram:
+            <a href="https://www.instagram.com/leewt_hkg/" target="_blank"
+              >@leewt_hkg</a
+            >
+          </p>
+          <div id="port">
+            <div class="portDiv">
+              <img class="portImg" src="/pics/lee1.jpg" />
+            </div>
+            <div class="portDiv">
+              <img class="portImg" src="/pics/lee2.jpg" />
+            </div>
+            <div class="portDiv">
+              <img class="portImg" src="/pics/lee3.jpg" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <script src="cube.js"></script>
+    <script src="scroll.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#port').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true,
+          arrows: true,
+        });
+      });
+    </script>
   </body>
 </html>
