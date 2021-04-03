@@ -2,9 +2,9 @@ body {
   font-family: Arial;
 
   position: relative;
-  background-color: white;
+  background-color: rgb(18, 18, 18);
   margin: 0;
-  color: black;
+  color: rgb(220, 220, 220);
   padding: 0;
 }
 
@@ -41,10 +41,10 @@ body {
   height: 170px;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.9360119047619048) 50%,
-    rgba(255, 255, 255, 0.9724264705882353) 53%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(18, 18, 18, 1) 0%,
+    rgba(18, 18, 18, 0.9360119047619048) 50%,
+    rgba(18, 18, 18, 0.972) 53%,
+    rgba(18, 18, 18, 0) 100%
   );
 }
 
@@ -59,23 +59,12 @@ body {
   margin-bottom: 5px;
 }
 
-/* @media screen and (min-width: 500px) {
-  .content-wrapper {
-    width: calc(100% - 170px);
-  }
-  #portaCubo {
-    background: none;
-  }
-} */
-
 #cubo {
   width: 80px;
   height: 80px;
   position: absolute;
   top: 50px;
   right: 50px;
-  /* margin-top: -20px;
-  margin-left: -20px; */
   transform-style: preserve-3d;
   animation: girar 5s infinite linear running;
 }
@@ -122,6 +111,7 @@ h1 {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 0;
+  color: white;
 }
 
 h2 {
@@ -131,18 +121,22 @@ h2 {
 
 h3 {
   font-size: 18px;
+  color: rgba(128, 255, 153, 0.714);
+}
+
+a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
 .noMargin {
   margin: 0;
 }
 
-/* #port {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
+#port {
+  margin: 0 25px 0 25px;
+  box-sizing: border-box;
+}
 
 .portImg {
   max-width: 90%;
@@ -151,5 +145,6 @@ h3 {
   margin: auto;
 }
 
-.portDiv {
+.slick-slide {
+  outline: none;
 }
