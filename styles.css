@@ -30,6 +30,7 @@ body {
 }
 
 #portaCubo {
+  z-index: 999;
   display: flex;
   align-items: center;
   padding-left: 5%;
@@ -110,7 +111,8 @@ body {
 h1 {
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 0;
+  margin-bottom: 5px;
+  margin-top: 80px;
   color: white;
 }
 
@@ -134,17 +136,51 @@ a {
 }
 
 #port {
-  margin: 0 25px 0 25px;
+  margin: 0 25px 10px 25px;
   box-sizing: border-box;
+  height: 400px;
 }
 
 .portImg {
   max-width: 90%;
-  height: 400px !important;
+  max-height: 400px;
+  height: auto !important;
   width: auto !important;
   margin: auto;
 }
 
+.slick-initialized .slick-track {
+  display: flex;
+  align-items: center;
+}
+
 .slick-slide {
   outline: none;
+}
+
+.draggable {
+  height: 400px !important;
+}
+
+.slick-dots li button:before {
+  color: rgb(220, 220, 220) !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+.ac {
+  height: 150px;
+  width: 150px;
+}
+
+#playlist {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.spotEmbed {
+  margin: 10px 10px 10px 10px;
 }
