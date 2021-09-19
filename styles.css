@@ -2,9 +2,9 @@ body {
   font-family: Arial;
 
   position: relative;
-  background-color: rgb(18, 18, 18);
+  background-color: rgb(237, 237, 237);
   margin: 0;
-  color: rgb(220, 220, 220);
+  color: rgb(0, 0, 0);
   padding: 0;
 }
 
@@ -40,13 +40,13 @@ body {
   max-width: 1024px;
   width: 95%;
   height: 170px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(18, 18, 18, 1) 0%,
     rgba(18, 18, 18, 0.9360119047619048) 50%,
     rgba(18, 18, 18, 0.972) 53%,
     rgba(18, 18, 18, 0) 100%
-  );
+  ); */
 }
 
 #navbar {
@@ -74,37 +74,30 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 1px solid black;
-  background-color: rgba(128, 255, 153, 0.714);
+  border: 5px solid black;
   transform: translateZ(40px);
 }
 
 #face1 {
-  background-color: rgba(128, 255, 153, 0.714);
   transform: translateZ(40px);
 }
 #face2 {
-  background-color: rgba(128, 255, 153, 0.714);
   transform: translateZ(-40px);
 }
 
 #face3 {
-  background-color: rgba(128, 255, 153, 0.714);
   transform: rotateY(-90deg) translateZ(40px);
 }
 
 #face4 {
-  background-color: rgba(128, 255, 153, 0.714);
   transform: rotateY(90deg) translateZ(40px);
 }
 
 #face5 {
-  background-color: rgba(128, 255, 153, 0.714);
   transform: rotateX(90deg) translateZ(40px);
 }
 
 #face6 {
-  background-color: rgba(128, 255, 153, 0.714);
   transform: rotateX(-90deg) translateZ(40px);
 }
 
@@ -113,7 +106,7 @@ h1 {
   font-weight: bold;
   margin-bottom: 5px;
   margin-top: 80px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 h2 {
@@ -123,11 +116,11 @@ h2 {
 
 h3 {
   font-size: 18px;
-  color: rgba(128, 255, 153, 0.714);
+  color: rgba(70, 70, 70, 0.714);
 }
 
 a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
