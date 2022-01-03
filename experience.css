@@ -16,18 +16,31 @@
   flex-direction: column;
   padding: 20px 2% 0 2%;
   background-color: #fafafa;
-  height: 390px;
+  min-height: 350px;
   max-width: 724px;
+}
+
+#experience-desc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#experience-desc-pos {
+  font-size: var(--minor);
+  font-family: var(--codeFont);
+  margin-top: 10px;
 }
 
 #experience-desc-date {
   color: var(--highlight);
   font-family: var(--codeFont);
+  font-size: var(--subtext);
 }
 
 .experience-side-active {
   font-family: var(--codeFont);
-  font-size: 20px;
+  font-size: var(--body);
   color: var(--highlight);
   cursor: pointer;
   margin-bottom: 20px;
@@ -35,7 +48,7 @@
 
 .experience-side-default {
   font-family: var(--codeFont);
-  font-size: 20px;
+  font-size: var(--body);
   color: var(--text);
   cursor: pointer;
   margin-bottom: 20px;
@@ -43,7 +56,70 @@
 
 .experience-side-disabled {
   font-family: var(--codeFont);
-  font-size: 20px;
+  font-size: var(--body);
   color: var(--disabled);
   margin-bottom: 20px;
+}
+
+/* Smartphones & Tablets (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  #experience-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #experience-side {
+    width: 100%;
+    padding: 15px 5px 15px 5px;
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .experience-side-active {
+    font-family: var(--codeFont);
+    font-size: var(--subtext);
+    color: var(--highlight);
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 20px;
+    margin-bottom: 0;
+    border-bottom: var(--highlight) 2px solid;
+  }
+
+  .experience-side-default {
+    font-family: var(--codeFont);
+    font-size: var(--subtext);
+    color: var(--text);
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .experience-side-disabled {
+    font-family: var(--codeFont);
+    font-size: var(--subtext);
+    color: var(--disabled);
+    white-space: nowrap;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  #experience-desc {
+    min-height: 450px;
+  }
+
+  #experience-desc-header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #experience-desc-name {
+    margin-bottom: 5px;
+  }
+
+  #experience-desc-pos {
+    margin-top: 2px;
+  }
 }

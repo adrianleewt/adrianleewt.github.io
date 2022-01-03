@@ -5,10 +5,12 @@ const sidebar = $('#experience-side');
 const company = $('#experience-desc-name');
 const date = $('#experience-desc-date');
 const list = $('#experience-desc-list');
+const pos = $('#experience-desc-pos');
 
 const data = [
   {
     name: 'Amazon (incoming)',
+    position: 'Software Development Engineer',
     disabled: true,
     start: '2022',
     end: null,
@@ -16,8 +18,9 @@ const data = [
   },
   {
     name: 'MyTake',
+    position: 'Co-Founder',
     disabled: false,
-    start: '2021',
+    start: 'June 2021',
     end: 'present',
     desc: [
       'Built a full-stack mobile application with React Native and Firebase, including voice memo and real time chat features.',
@@ -27,21 +30,22 @@ const data = [
   },
   {
     name: 'rapStudy',
+    position: 'Head of Product',
     disabled: false,
-    start: '2019',
-    end: '2021',
+    start: 'Nov. 2019',
+    end: 'June 2021',
     desc: [
       'Led 15 engineers and designers in building a web app using React and Firebase for students in over 30 schools.',
       'Built a suite of music supply chain automation and customer onboarding tools using Python and Google Cloud Functions, leading to a 20% reduction in production time and rapid onboarding for partner schools.',
       'Collected and analyzed listening data with BigQuery and Google Data Studio to identify student preferences, shaping the strategy for music production that led to a 25% increase in average listening time.',
-      'Part of the founding team that was the Grand Prize winner of the 2020 New York Business Plan Competition.',
     ],
   },
   {
     name: 'Bowtie',
+    position: 'Growth and Acquisitions Intern',
     disabled: false,
-    start: '2018',
-    end: '2018',
+    start: 'June 2018',
+    end: 'August 2018',
     desc: [
       'Built Python tools to improve contracts, leading to a 33% increase in readability in the insurance product policy.',
       'Developed text pre-processing scripts to format over 65,000 words in 22 competitor policies and performed data analysis to identify weak points to strengthen in our own documents.',
@@ -50,9 +54,10 @@ const data = [
   },
   {
     name: 'Cornell Hedge Fund',
+    position: 'Chief Operations Officer',
     disabled: false,
-    start: '2019',
-    end: '2021',
+    start: 'Feb. 2019',
+    end: 'Feb. 2021',
     desc: [
       'Pitched TSM after detailed equity research on supply chains and demand side drivers, leading to a 123% return.',
       'Developed Python scripts to determine sentiment changes in earnings call transcripts to support investments.',
@@ -61,9 +66,10 @@ const data = [
   },
   {
     name: 'Fujifilm HK',
+    position: 'Marketing Intern and Product Specialist',
     disabled: false,
-    start: 2017,
-    end: 2017,
+    start: 'May 2017',
+    end: 'July 2017',
     desc: [
       'Formulated a renovation proposal regarding retail space efficiency based on market research on physical stores, which was later executed to increase conversion rate in the primary showroom.',
       'Developed new marketing strategies for the new camera line to better fit regional preferences, increasing traffic to both online and offline retail.',
@@ -107,6 +113,7 @@ function render(active) {
   const curr = data[active];
   company.text(curr.name);
   date.text(curr.start + '-' + curr.end);
+  pos.text(curr.position);
   curr.desc.forEach((bullet) => {
     list.append(`<li>${bullet}</li>`);
   });

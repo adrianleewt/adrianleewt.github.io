@@ -54,7 +54,7 @@
         <h1>Adrian Lee</h1>
         <p
           style="
-            font-size: 18px;
+            font-size: var(--subtext);
             font-family: var(--codeFont);
             color: var(--highlight);
             margin-bottom: 20px;
@@ -86,8 +86,11 @@
         <div id="experience-wrapper">
           <div id="experience-side"></div>
           <div id="experience-desc">
-            <h3 id="experience-desc-name"></h3>
-            <p id="experience-desc-date"></p>
+            <div id="experience-desc-header">
+              <h3 id="experience-desc-name"></h3>
+              <p id="experience-desc-date"></p>
+            </div>
+            <p id="experience-desc-pos"></p>
             <ul id="experience-desc-list"></ul>
           </div>
         </div>
@@ -105,11 +108,92 @@
             adrianlee1111@gmail.com
           </a>
         </div>
+        <div id="social-bar">
+          <a href="http://www.github.com/adrianleewt" target="_blank">
+            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg
+              enable-background="new 0 0 512 512"
+              height="512px"
+              id="github"
+              class="social-icon"
+              version="1.1"
+              viewBox="0 0 512 512"
+              width="512px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="M296.133,354.174c49.885-5.891,102.942-24.029,102.942-110.192   c0-24.49-8.624-44.448-22.67-59.869c2.266-5.89,9.515-28.114-2.734-58.947c0,0-18.139-5.898-60.759,22.669   c-18.139-4.983-38.09-8.163-56.682-8.163c-19.053,0-39.011,3.18-56.697,8.163c-43.082-28.567-61.22-22.669-61.22-22.669   c-12.241,30.833-4.983,53.057-2.718,58.947c-14.061,15.42-22.677,35.379-22.677,59.869c0,86.163,53.057,104.301,102.942,110.192   c-6.344,5.452-12.241,15.873-14.507,30.387c-12.702,5.438-45.808,15.873-65.758-18.592c0,0-11.795-21.31-34.012-22.669   c0,0-22.224-0.453-1.813,13.592c0,0,14.96,6.812,24.943,32.653c0,0,13.6,43.089,76.179,29.48v38.543   c0,5.906-4.53,12.702-15.865,10.89C96.139,438.977,32.2,354.626,32.2,255.77c0-123.807,100.216-224.022,224.03-224.022   c123.347,0,224.023,100.216,223.57,224.022c0,98.856-63.946,182.754-152.828,212.688c-11.342,2.266-15.873-4.53-15.873-10.89   V395.45C311.1,374.577,304.288,360.985,296.133,354.174L296.133,354.174z M512,256.23C512,114.73,397.263,0,256.23,0   C114.73,0,0,114.73,0,256.23C0,397.263,114.73,512,256.23,512C397.263,512,512,397.263,512,256.23L512,256.23z"
+                  fill="#000000"
+                  fill-rule="evenodd"
+                />
+              </g>
+            </svg>
+          </a>
+          <a href="http://www.instagram.com/leewt_hkg" target="_blank">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="instagram"
+              class="social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 56.7 56.7"
+              enable-background="new 0 0 56.7 56.7"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+		c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"
+                />
+                <circle cx="41.5" cy="16.4" r="2.9" />
+                <path
+                  d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+		h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+		s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+		c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"
+                />
+              </g>
+            </svg>
+          </a>
+          <a href="http://www.linkedin.com/in/adrian-lee-wt" target="_blank">
+            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg
+              height="100%"
+              style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 2;
+              "
+              version="1.1"
+              viewBox="0 0 512 512"
+              width="100%"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:serif="http://www.serif.com/"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              id="linkedin"
+              class="social-icon"
+            >
+              <path
+                d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm-80.037,399.871l0,-199.921l-66.464,0l0,199.921l66.464,0Zm239.62,0l0,-114.646c0,-61.409 -32.787,-89.976 -76.509,-89.976c-35.255,0 -51.047,19.389 -59.889,33.007l0,-28.306l-66.447,0c0.881,18.757 0,199.921 0,199.921l66.446,0l0,-111.65c0,-5.976 0.43,-11.95 2.191,-16.221c4.795,-11.935 15.737,-24.299 34.095,-24.299c24.034,0 33.663,18.34 33.663,45.204l0,106.966l66.45,0Zm-272.403,-296.321c-22.74,0 -37.597,14.95 -37.597,34.545c0,19.182 14.405,34.544 36.717,34.544l0.429,0c23.175,0 37.6,-15.362 37.6,-34.544c-0.43,-19.595 -14.424,-34.545 -37.149,-34.545Z"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
 
     <script src="experience.js"></script>
     <script src="slidingBanner.js"></script>
-    <script src="scrollHander.js"></script>
+    <script src="scrollHandler.js"></script>
   </body>
 </html>

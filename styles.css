@@ -1,12 +1,50 @@
 :root {
+  /* Colors */
   --disabled: #dcdcdc;
   --highlight: #fba500;
   --header: #000000;
   --text: #747474;
-  --codeFont: 'Source Code Pro';
-  --sansFont: 'Open Sans';
   --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --background: #f1f1f1;
+  /* Font families */
+  --codeFont: 'Source Code Pro';
+  --sansFont: 'Open Sans';
+  /* Font sizes */
+  --splash: 96px;
+  --header: 36px;
+  --subheader: 24px;
+  --body: 22px;
+  --subtext: 18px;
+  --minor: 14px;
+  --tiny: 12px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  :root {
+    --splash: 48px;
+    --header: 36px;
+    --subheader: 22px;
+    --body: 18px;
+    --subtext: 12px;
+    --minor: 11px;
+    --tiny: 10px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+  :root {
+    --splash: 48px;
+    --header: 36px;
+    --subheader: 20px;
+    --body: 18px;
+    --subtext: 12px;
+    --minor: 11px;
+    --tiny: 10px;
+  }
 }
 
 * {
@@ -57,6 +95,7 @@ body {
   font-family: var(--codeFont);
   color: var(--text);
   margin-left: 20px;
+  transition: all ease 0.15s;
 }
 
 .nav-item-active {
@@ -70,7 +109,7 @@ body {
   padding: 10px 5px 10px 5px;
 
   /* Positioning */
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,7 +129,7 @@ body {
 
 h1 {
   font-family: var(--codeFont);
-  font-size: 96px;
+  font-size: var(--splash);
   font-weight: bold;
   color: var(--header);
   letter-spacing: 0.05em;
@@ -99,7 +138,7 @@ h1 {
 
 h2 {
   font-family: var(--codeFont);
-  font-size: 36px;
+  font-size: var(--header);
   font-weight: bold;
   margin: 0 0 20px 0;
   color: var(--header);
@@ -109,7 +148,7 @@ h2 {
 h3 {
   font-family: var(--codeFont);
   color: var(--highlight);
-  font-size: 36px;
+  font-size: var(--subheader);
   font-weight: bold;
   margin: 0;
   letter-spacing: 0.1em;
@@ -117,14 +156,15 @@ h3 {
 
 p {
   font-family: var(--sansFont);
-  font-size: 22px;
+  font-size: var(--body);
   color: var(--text);
   margin: 0;
 }
 
 a {
-  color: rgb(0, 0, 0);
+  color: var(--text);
   font-weight: bold;
+  font-size: var(--subtext);
 }
 
 li {
@@ -144,4 +184,18 @@ li {
   box-shadow: var(--shadow);
   font-family: var(--codeFont);
   letter-spacing: 0.1em;
+}
+
+#social-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icon {
+  height: 36px;
+  width: 36px;
+  margin: 0 15px 0 15px;
 }

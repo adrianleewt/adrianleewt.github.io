@@ -2,7 +2,7 @@
   white-space: nowrap;
   margin-right: 15px;
   font-family: var(--codeFont);
-  font-size: 12px;
+  font-size: var(--tiny);
   letter-spacing: -0.05em;
   display: inline-block;
   height: 22px;
@@ -47,7 +47,7 @@
 .side-slider-sub {
   white-space: nowrap;
   font-family: var(--codeFont);
-  font-size: 12px;
+  font-size: var(--tiny);
   color: var(--text);
   letter-spacing: -0.05em;
 }
