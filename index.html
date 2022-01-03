@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Adrian Lee</title>
-    <meta name="description" content="my green box" />
+    <meta
+      name="description"
+      content="Software engineer and aspiring product manager."
+    />
     <meta name="author" content="Adrian Lee" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
       rel="stylesheet"
       type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="experience.css" />
+    <link rel="stylesheet" href="slidingBanner.css" />
   </head>
 
   <body>
@@ -28,170 +37,79 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-
+    <div id="main-nav">
+      <div id="main-nav-inner">
+        <a
+          id="main-nav-item-block1"
+          class="nav-item nav-item-active"
+          href="#block1"
+          >About</a
+        >
+        <a id="main-nav-item-block2" class="nav-item" href="#block2">Work</a>
+        <a id="main-nav-item-block3" class="nav-item" href="#block3">Contact</a>
+      </div>
+    </div>
     <div class="page-wrapper">
-      <div id="portaCubo">
-        <!-- <div id="navbar">
-          <button class="navbutton" id="nav-work">work</button>
-          <button class="navbutton" id="nav-photos">photos</button>
-        </div> -->
-        <div id="cubo">
-          <div class="face" id="face1"></div>
-          <div class="face" id="face2"></div>
-          <div class="face" id="face3"></div>
-          <div class="face" id="face4"></div>
-          <div class="face" id="face5"></div>
-          <div class="face" id="face6"></div>
+      <div id="block1" class="body-block">
+        <h1>Adrian Lee</h1>
+        <p
+          style="
+            font-size: 18px;
+            font-family: var(--codeFont);
+            color: var(--highlight);
+            margin-bottom: 20px;
+            font-weight: bold;
+          "
+        >
+          Software & Product
+        </p>
+        <p style="margin-bottom: 20px">
+          I'm passionate about building things that have real impacts on
+          people's lives. With experience in software engineering, product
+          management, UX design, marketing, and finance, I aim to deliver impact
+          at all stages of the product lifecycle.
+        </p>
+        <div id="side-slider">
+          <div id="side-slider-header">
+            <span style="line-height: 22px">Outside of work, I love:</span>
+          </div>
+          <div id="side-slider-main">
+            <div id="side-slider-opacity"></div>
+            <div id="side-slider-sub1" class="side-slider-sub"></div>
+            <div id="side-slider-sub2" class="side-slider-sub"></div>
+          </div>
         </div>
       </div>
-      <div class="main-wrapper">
-        <div class="content-wrapper">
-          <div id="main-header">
-            <h1 style="margin-bottom: 20px">Adrian Lee</h1>
-            <p style="margin-bottom: 20px">
-              Cornell student passionate about making big impacts with
-              technology.
-            </p>
 
-            <a href="mailto: adrian@rapstudy.com">adrianlee1111@gmail.com</a>
+      <div id="block2" class="body-block">
+        <h2>experience</h2>
+        <div id="experience-wrapper">
+          <div id="experience-side"></div>
+          <div id="experience-desc">
+            <h3 id="experience-desc-name"></h3>
+            <p id="experience-desc-date"></p>
+            <ul id="experience-desc-list"></ul>
           </div>
+        </div>
+      </div>
 
-          <h1 id="header-work">work</h1>
-
-          <h3>MyTake (2021)</h3>
-          <p>
-            I am currently Co-Founder of MyTake, a random chat app that connects
-            strangers with opposing views on recent events. MyTake was founded
-            to solve the problem of echochambers and the rapid erosion of civil
-            discourse on traditional social media platforms.
-          </p>
-
-          <p>
-            We're currently in closed Beta on Testflight, and hope to launch to
-            the public very soon.
-          </p>
-          <br />
-
-          <h3>rapStudy (2019 - 2021)</h3>
-          <p>
-            I was Head of Product at rapStudy, an Edtech company that integrates
-            educational content into kids' favorite songs.
-          </p>
-
-          <p>
-            I joined the team in late 2019, managing 15 student engineers and
-            designers. In 3 months, we went from an idea and a demo .mp3 to a
-            full web app with users from over 30 schools in NY, CT, and NJ,
-            built with React.js and Firebase.
-          </p>
-          <p>
-            The key problem we were solving was student engagement. Studies have
-            repeatedly shown that lower engagement results in lower achievement
-            (and this is especially true at younger ages).
-          </p>
-          <p>
-            By using music that kids already know and love, we provided a way
-            for kids to get excited about learning by singing and dancing -
-            whether its over Zoom or back at school.
-          </p>
-          <br />
-
-          <h3>Bowtie (2019)</h3>
-          <p>
-            In the summer of 2019, I interned at
-            <a href="https://www.bowtie.com.hk/en" target="_blank">Bowtie</a>,
-            an Insurtech startup based in Hong Kong. There, I worked on
-            identifying new customer segments, and wrote tailored Python tools
-            with <a href="https://www.nltk.org/" target="_blank">NLTK</a> to
-            identify hard-to-read areas in their insurance policies.
-          </p>
-          <p>
-            The core issue was readability - as a company that markets policies
-            directly to the end user, customers only understand Bowtie's unique
-            value if they can understand their policies.
-          </p>
-          <p>
-            With these tools, I was able to identify the specific topics and
-            segments in the policies that were too dense, long, or burdened with
-            legalese.
-          </p>
-
-          <br />
-
-          <h1 id="header-photos">photos</h1>
-          <p>
-            Some images I've made. For a more complete look, check out the
-            instagram:
-            <a href="https://www.instagram.com/leewt_hkg/" target="_blank"
-              >@leewt_hkg</a
-            >
-          </p>
-          <div id="port">
-            <div class="portDiv">
-              <img class="portImg" src="/pics/lee1.jpg" />
-            </div>
-            <div class="portDiv">
-              <img class="portImg" src="/pics/lee2.jpg" />
-            </div>
-            <div class="portDiv">
-              <img class="portImg" src="/pics/lee3.jpg" />
-            </div>
-            <div class="portDiv">
-              <img class="portImg" src="/pics/lee4.jpg" />
-            </div>
-            <div class="portDiv">
-              <img class="portImg" src="/pics/lee5.jpg" />
-            </div>
-            <div class="portDiv">
-              <img class="portImg" src="/pics/lee6.jpg" />
-            </div>
-          </div>
-
-          <br />
-
-          <h1 id="header-music">what i've been listening to</h1>
-          <div id="playlist">
-            <iframe
-              class="spotEmbed"
-              src="https://open.spotify.com/embed/album/01FCoGEQ3NFWF4fHJzdiax"
-              width="300"
-              height="380"
-              frameborder="0"
-              allowtransparency="true"
-              allow="encrypted-media"
-            ></iframe>
-
-            <iframe
-              class="spotEmbed"
-              src="https://open.spotify.com/embed/album/0jIGcf2ycn8eLfXhD3J5Ny"
-              width="300"
-              height="380"
-              frameborder="0"
-              allowtransparency="true"
-              allow="encrypted-media"
-            ></iframe>
-          </div>
+      <div id="block3" class="body-block">
+        <h2>let's talk!</h2>
+        <p>Click below to send me an email or check out any of my socials.</p>
+        <div style="display: flex; width: 100%; justify-content: center">
+          <a
+            id="emailButton"
+            href="mailto:adrianlee1111@gmail.com"
+            target="_blank"
+          >
+            adrianlee1111@gmail.com
+          </a>
         </div>
       </div>
     </div>
 
-    <script src="cube.js"></script>
-    <script src="scroll.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#port').slick({
-          dots: true,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          adaptiveHeight: true,
-          arrows: true,
-        });
-      });
-    </script>
+    <script src="experience.js"></script>
+    <script src="slidingBanner.js"></script>
+    <script src="scrollHander.js"></script>
   </body>
 </html>

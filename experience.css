@@ -1,0 +1,49 @@
+#experience-wrapper {
+  display: flex;
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+#experience-side {
+  background-color: white;
+  width: 300px;
+  padding: 20px 10px 20px 10px;
+}
+
+#experience-desc {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 20px 2% 0 2%;
+  background-color: #fafafa;
+  height: 390px;
+  max-width: 724px;
+}
+
+#experience-desc-date {
+  color: var(--highlight);
+  font-family: var(--codeFont);
+}
+
+.experience-side-active {
+  font-family: var(--codeFont);
+  font-size: 20px;
+  color: var(--highlight);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.experience-side-default {
+  font-family: var(--codeFont);
+  font-size: 20px;
+  color: var(--text);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.experience-side-disabled {
+  font-family: var(--codeFont);
+  font-size: 20px;
+  color: var(--disabled);
+  margin-bottom: 20px;
+}
