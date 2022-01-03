@@ -53,24 +53,21 @@
 
 #side-slider-sub1 {
   display: inline-block;
-  animation: marquee 10s linear infinite;
+  animation: marquee 30s linear infinite;
   animation-delay: 0s;
 }
 
 #side-slider-sub2 {
   display: inline-block;
-  animation: marquee 10s linear infinite;
-  animation-delay: 5s;
+  animation: marquee 30s linear infinite;
+  animation-delay: 0s;
 }
 
 @keyframes marquee {
-  /* 0% {
+  0% {
     transform: translate(0, 0);
   }
   100% {
     transform: translate(-100%, 0);
-  } */
-  to {
-    transform: translateX(-50%);
   }
 }
