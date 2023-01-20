@@ -9,19 +9,24 @@ const pos = $('#experience-desc-pos');
 
 const data = [
   {
-    name: 'Amazon (incoming)',
+    name: 'Amazon SCOT',
     position: 'Software Development Engineer',
-    disabled: true,
-    start: '2022',
-    end: null,
-    desc: [],
+    disabled: false,
+    start: 'August 2022',
+    end: 'present',
+    desc: [
+	'Designed and implemented request validations and failure alarms for our APIs that handle over 250 million requests a day, eliminating ~10 high severity issues annually.',
+	'Designed, built, and tested a documentation-as-code system for internal use, reaching over 5000 users a month and reducing our support tickets by 70% QoQ.',
+	'Created CI/CD workflows to shadow test production traffic in our deployment pipeline for over 50 deployments a week to a fleet of >500 hosts.',
+	'Participated in the team on-call rotation to deep dive over 100 support tickets and directly resolve high severity issues and maintain operational excellence goals.',
+    ],
   },
   {
     name: 'MyTake',
     position: 'Co-Founder',
     disabled: false,
     start: 'June 2021',
-    end: 'present',
+    end: 'March 2022',
     desc: [
       'Built a full-stack mobile application with React Native and Firebase, including voice memo and real time chat features.',
       'Unit tested all backend cloud functions and frontend components with local emulators and Jest, achieving a 90% and 75% code coverage, respectively.',
